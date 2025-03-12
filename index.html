@@ -3,29 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Health Metrics Monitor</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Page</h1>
-        <p>This is a simple webpage hosted on GitHub Pages.</p>
-    </div>
+
+    <header class="gradient-header">
+        <h1>Health Metrics Monitor</h1>
+        <p>Your personal health tracking companion</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <p style="text-align: center;">
+                Welcome to your personal Health Metrics Monitor! Track and understand your vital health metrics with our interactive dashboard. 
+                Select a metric below to get started.
+            </p>
+
+            <div class="sidebar">
+                <h2>Health Metrics</h2>
+                <select id="metric-selector">
+                    <option value="Heart Rate">Heart Rate</option>
+                    <option value="Blood Pressure">Blood Pressure</option>
+                    <option value="Body Temperature">Body Temperature</option>
+                    <option value="Respiratory Rate">Respiratory Rate</option>
+                    <option value="BMI">BMI</option>
+                </select>
+            </div>
+
+            <div class="metrics-container">
+                <div class="metric-container">
+                    <h3>Your Vitals</h3>
+                    <img src="your-image-path.svg" class="medical-icon" alt="Vitals Icon">
+                    <p class="metric-description">Monitor your health metrics in real-time with interactive visualizations.</p>
+                </div>
+
+                <div class="metric-container">
+                    <h3>Insights</h3>
+                    <img src="your-image-path.svg" class="medical-icon" alt="Insights Icon">
+                    <p class="metric-description">Understand your health data with personalized recommendations and trends.</p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin: 2rem 0;">Key Health Indicators</h3>
+
+            <div class="stats-container">
+                <div class="stats-card">
+                    <div class="stats-number">60-100</div>
+                    <div class="stats-label">Heart Rate (bpm)</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">120/80</div>
+                    <div class="stats-label">Blood Pressure (mmHg)</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">98.6°F</div>
+                    <div class="stats-label">Body Temperature</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">12-20</div>
+                    <div class="stats-label">Respiratory Rate (bpm)</div>
+                </div>
+            </div>
+
+            <div id="metric-details" class="metric-details">
+                <h4>Select a health metric to view details...</h4>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="disclaimer">
+            <strong>Disclaimer:</strong> This tool is for educational purposes only and should not be used as a substitute for professional medical advice, diagnosis, or treatment.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("metric-selector").addEventListener("change", function() {
+            const selectedMetric = this.value;
+            document.getElementById("metric-details").innerHTML = `<h4>${selectedMetric} Details...</h4>`;
+        });
+    </script>
+
 </body>
 </html>
