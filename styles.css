@@ -1,0 +1,74 @@
+.metric-container {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+    transition: transform 0.25s;
+}
+
+.metric-container:hover {
+    transform: translateY(-5px);
+}
+
+.metric-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0066cc;
+}
+
+.metric-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1f1f1f;
+}
+
+.metric-description {
+    color: #666666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.tooltip {
+    border-left: 4px solid #0066cc;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.gradient-header {
+    background: linear-gradient(120deg, #0066cc, #00cc66);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.stats-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.stats-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.stats-label {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.medical-icon {
+    width: 64px;
+    height: 64px;
+    margin: 1rem auto;
+}
