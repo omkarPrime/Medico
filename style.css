@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.gradient-header {
+    background: linear-gradient(120deg, #0066cc, #00cc66);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.sidebar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#metric-selector {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.metrics-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.metric-container {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s;
+    width: 45%;
+}
+
+.metric-container:hover {
+    transform: translateY(-5px);
+}
+
+.medical-icon {
+    width: 64px;
+    height: 64px;
+    margin: 1rem auto;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.stats-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 20%;
+}
+
+.stats-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.stats-label {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.metric-details {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.disclaimer {
+    color: #666666;
+    font-size: 0.9rem;
+    padding: 1rem;
+    text-align: center;
+}
